@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Game</title>
+    <link rel="stylesheet" type="text/css" href="styleGame.css">
+</head>
+<body>
+    <div class="big">
+        <div class="box" id="firstContainer">
+            <section id="box1-title">
+                <h1><span>A</span>rithmetic <span>G</span>ame</h1>
+            </section>
+            <section id="box1-main">
+                <button onclick="" type="submit">Start the game</button>
+            </section>
+        </div>
+        <div class="box" id="secondContainer">
+            <section id="box2-score">
+                <h2>Score :</h2>
+                <h2 id="score">0</h2>
+            </section>
+            <section id="box2-question">
+                <h3>Question?</h3>
+            </section>
+            <section id="box2-answers">
+                <ul>
+                    <li><button id="answer-A" type="submit" onclick="">Answer A</button></li>
+                    <li><button id="answer-B" type="submit" onclick="">Answer B</button></li>
+                    <li><button id="answer-C" type="submit" onclick="">Answer C</button></li>
+                    <li><button id="answer-D" type="submit" onclick="">Answer D</button></li>
+                </ul>
+            </section>
+            <section id="box2-buttons">
+                <button type="reset" onclick="" id="btn-reset">Reset</button>
+                <button type="submit" onclick="" id="btn-next">Next</button>
+            </section>
+        </div>
+        <div class="box" id="thirdContainer">
+            <div id="box3-score">
+                <h2 id="score-title">Your total score is :</h2>
+                <h2 id="total-score">0 / 5</h2>
+            </div>
+            <div id="box3-btn">
+                <button id="exit-btn" type="submit" onclick="">Exit</button>
+                <button id="restart-btn" type="submit" onclick="">Restart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

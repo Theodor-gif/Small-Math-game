@@ -1,0 +1,204 @@
+/* For everything */
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1100px;
+        }
+        .big{
+            background-color: rgb(184, 190, 184);
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: rgb(228, 173, 79);
+            width: 65%;
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 1px 5px 20px  rgba(107, 122, 120, 0.244);
+        }
+
+        /* The first box style */
+
+        #firstContainer{
+            position: absolute;
+            z-index: 0;
+            display: grid;
+            grid:
+            "Title" 50%
+            "Main" 50%
+            /
+            100%;
+        }
+        #box1-title{
+            grid-area: Title;
+            text-align: center;
+            font-size: 160%;
+            color: white;
+        }
+        #box1-title h1{
+            margin-top: 65px;
+        }
+        #box1-title h1 span{
+            color: rgb(139, 140, 89);
+            font-style: italic;
+            font-size: 4rem;
+        }
+        #box1-main{
+            grid-area: Main;
+            display: flex;
+            justify-content: center;
+        }
+        #box1-main button{
+            font-size: 1.5rem;
+            padding: 2.5% 5%;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: rgb(139, 140, 89);
+            color: white;
+        }
+
+        /* The second page */
+
+        #secondContainer{
+            position: absolute;
+            z-index: 0;
+            display: grid;
+            grid:
+            "Score" 15%
+            "Question" 20%
+            "Answers" 50%
+            "Buttons" 15%
+            /
+            100%;
+        }
+        #box2-score{
+            grid-area: Score;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            background-color:rgb(160, 122, 57);
+            width: 35%;
+            margin-left: 60%;
+            border-radius: 20px;
+            padding: 1% 0;
+        }
+        #box2-score h2{
+            margin-right: 5%;
+            color: white;
+        }
+        #box2-question{
+            grid-area: Question;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2% 0;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 20px;
+            background-color:rgb(160, 122, 57);
+            box-shadow: 5px 5px 20px  rgba(107, 122, 120, 0.612);
+        }
+        #box2-answers{
+            grid-area: Answers;
+        }
+        #box2-answers ul li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+        #box2-answers ul li button{
+            width: 77.5%;
+            margin: 2% 0;
+            padding: 1.5% 0;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        #box2-buttons{
+            grid-area: Buttons;
+            display: flex;
+            justify-content: space-around;
+        }
+        #box2-buttons button{
+            font-size: 1.2rem;
+            padding: 1% 2%;
+            background-color:rgb(139, 140, 89);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+
+
+
+        #thirdContainer{
+            position: absolute;
+            z-index: 0;
+            display: grid;
+            grid:
+            "Score" 50%
+            "Buttons" 50%
+            /
+            100%;
+        }
+        #box3-score{
+            grid-area: Score;
+            border: 2px solid rgb(232, 142, 46);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 20px;
+            padding: 3%;
+            background-color:rgb(139, 140, 89);
+            margin-top: 60px;
+        }
+        #total-score{
+            font-size: 4rem;
+            color: white;
+        }
+        #score-title{
+            font-size: 2rem;
+            color: rgb(83, 80, 80);
+        }
+        #box3-btn{
+            grid-area: Buttons;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #box3-btn button{
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgb(160, 122, 57);
+            color: white;
+            cursor: pointer;
+        }
+        #exit-btn{
+            padding: 7% 6%;
+        }
+        #restart-btn{
+            padding: 0% 3.5%
+        }
