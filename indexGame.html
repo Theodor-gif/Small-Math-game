@@ -13,7 +13,7 @@
                 <h1><span>A</span>rithmetic <span>G</span>ame</h1>
             </section>
             <section id="box1-main">
-                <button onclick="" type="submit">Start the game</button>
+                <button onclick="startGame()" type="submit">Start the game</button>
             </section>
         </div>
         <div class="box" id="secondContainer">
@@ -22,19 +22,19 @@
                 <h2 id="score">0</h2>
             </section>
             <section id="box2-question">
-                <h3>Question?</h3>
+                <h3 id="questionMark">Question?</h3>
             </section>
             <section id="box2-answers">
                 <ul>
-                    <li><button id="answer-A" type="submit" onclick="">Answer A</button></li>
-                    <li><button id="answer-B" type="submit" onclick="">Answer B</button></li>
-                    <li><button id="answer-C" type="submit" onclick="">Answer C</button></li>
-                    <li><button id="answer-D" type="submit" onclick="">Answer D</button></li>
+                    <li><button id="answer-A" type="submit" onclick="answerRandomA()">Answer A</button></li>
+                    <li><button id="answer-B" type="submit" onclick="answerRandomB()">Answer B</button></li>
+                    <li><button id="answer-C" type="submit" onclick="answerRandomC()">Answer C</button></li>
+                    <li><button id="answer-D" type="submit" onclick="answerRandomD()">Answer D</button></li>
                 </ul>
             </section>
             <section id="box2-buttons">
-                <button type="reset" onclick="" id="btn-reset">Reset</button>
-                <button type="submit" onclick="" id="btn-next">Next</button>
+                <button type="reset" onclick="backToStart()" id="btn-reset">Reset</button>
+                <button type="submit" onclick="questionAdd()" id="btn-next">Next</button>
             </section>
         </div>
         <div class="box" id="thirdContainer">
@@ -43,10 +43,11 @@
                 <h2 id="total-score">0 / 5</h2>
             </div>
             <div id="box3-btn">
-                <button id="exit-btn" type="submit" onclick="">Exit</button>
-                <button id="restart-btn" type="submit" onclick="">Restart</button>
+                <button id="exit-btn" type="submit" onclick="firstPage()">Exit</button>
+                <button id="restart-btn" type="submit" onclick="restartGame()">Restart</button>
             </div>
         </div>
     </div>
+    <script src="game.js"></script>
 </body>
 </html>

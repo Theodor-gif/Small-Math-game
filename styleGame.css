@@ -36,7 +36,7 @@
 
         #firstContainer{
             position: absolute;
-            z-index: 0;
+            z-index: 1;
             display: grid;
             grid:
             "Title" 50%
